@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+#      tinyInt1isBit=false 将tinyint转换为Integer
+      url: jdbc:mysql://localhost:3306/myemail?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT&allowPublicKeyRetrieval=true&useAffectedRows=true
+      username: root
+      password: lxc169301
+
+  mail:
+    host: smtp.qq.com
+    username: 1693019995@qq.com
+    password: waxspynwqwtqcjed
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+mybatis:
+    mapper-locations: classpath*:mapper/*/*.xml
+    config-location: classpath:mybatis/mybatis-config.xml
+
+
+
+
+
