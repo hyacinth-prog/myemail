@@ -7,4 +7,5 @@ import org.springframework.context.annotation.Configuration;
 @MapperScan(basePackages = "com.lxc.myemail.mapper")
 public class MybatisConfig {
 
+
 }
